@@ -6,10 +6,18 @@ public class TestModel {
 
 		Model model = new Model();
 
-		System.out.println("TestModel -- TODO");
+		System.out.println("TestModel");
 		
-//		System.out.println("Creo il grafo relativo al 2000");
-//		model.createGraph(2000);
+		model.creaGrafo(2000);
+		//System.out.println(model.getGraph());
+		Country c = new Country("SIC",329,"Two Sicilies");
+		System.out.println(model.getDegree(c));
+		
+		//System.out.println(model.getListaConnessi());
+		System.out.println(model.numeroGrafi());
+		
+  //System.out.println("Creo il grafo relativo al 2000");
+	//model.createGraph(2000);
 		
 //		List<Country> countries = model.getCountries();
 //		System.out.format("Trovate %d nazioni\n", countries.size());
